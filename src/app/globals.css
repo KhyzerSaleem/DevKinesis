@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-top: 64px; /* Navbar height */
+}
+
+@layer base {
+  body {
+    margin: 0;
+    padding-top: 64px; /* Adjust to match the navbar height */
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Transition for navbar */
+  nav {
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  a {
+    transition: color 0.3s;
+  }
+
+  button {
+    transition: transform 0.3s;
+  }
+}
